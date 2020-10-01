@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Speedier",
+    "version": "1.0",
+    "description": "Automatically speeds up youtube videos, and lets you tweak playback speed",
+    "icons": {
+        "48": "icon-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["speedup.js"]
+        }
+    ]
+}
